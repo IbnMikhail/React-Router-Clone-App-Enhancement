@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import React from 'react';
 import './App.css'
 import Nav from './components/Nav';
@@ -8,19 +9,19 @@ import Faq from './components/Faq';
 import Footer from './components/Footer';
 
 function App() {
-  const [count, setCount] = useState(0)
+  
 
   return (
-    <>
-      
-       <Nav />
+
+    <div>
        <Header />
-       <Features />
        <Row />
        <Faq />
        <Footer />
+     
+       </div>
       
-    </>
+  
   )
 }
 
